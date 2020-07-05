@@ -1,0 +1,135 @@
+/*Globals*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 1.5;
+}
+
+h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    font-weight: 400
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 1.8em
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.8em
+}
+
+/*Menus*/
+.menu-nav{
+    height: 200px;
+    padding-top: 10px;
+    padding-bottom:10px;  
+}
+
+
+/*Globals*/
+#cabecera{
+    padding-top:20px;
+    padding-bottom:20px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    height: 500px;
+    margin-bottom: 40px;
+
+}
+.aboutme-img{
+    width: 40%;
+    
+}
+
+.aboutme-img img{
+    border-radius: var(--border-radius);
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#presentacion{
+    padding-top:20%;
+    width: 50%;
+    text-align: left;
+    align-content: center;
+}
+.bienvenidos h2{
+    line-height: 1.1;
+
+ }
+.bienvenidos h3{
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+.bienvenidos p{
+    margin-bottom: 20px;
+}
+
+
+/*Content*/
+.contenido{
+    display: block;
+    max-width: 740px;
+    margin: 0 auto 15vh;
+    padding-right: 15px;
+    padding-left: 15px;
+
+  
+}
+
+.contenido h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contenido li {
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 1.8em
+}
+
+/*Footer*/
+footer{
+    flex-shrink: 0;
+}
+
+.footer-wrap{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.footer-copyright{
+    font-size: 9px;
+    max-width: 250px;
+    height: 25px;
+    margin: auto;
+    padding: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: .7;
+}
+
+.footer-icons{
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}

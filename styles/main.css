@@ -211,3 +211,28 @@ visibility: hidden;
    padding-bottom:50px ;
    font-size: 55px;
 }
+
+/*Footer*/
+footer{
+    flex-shrink: 0;
+}
+
+.footer-wrap{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.footer-copyright{
+ 
+    font-size: 9px;
+    max-width: 250px;
+    height: 25px;
+    margin: 50px auto;
+    padding: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: .7;
+}
