@@ -72,7 +72,7 @@ cursor: pointer;
 /*icono menu*/
 .btn-burger-nav::before,
 .btn-burger-nav::after{
-    content: "";
+    content: " ";
     position: absolute;
     width: 30px;
     height: 4px;
@@ -168,12 +168,16 @@ visibility: hidden;
     color: #FFBFB3;
 }
 
+/*break4*/
 
+/* Section Break 4 */
+.section-break-4{
+    display: none;
 }
+
 
 /*grid*/
 .diseno-web{
-    background-color: #F9F9F9;
     height: 600px;
     padding-left: 80px;
     padding-right: 80px;
@@ -195,6 +199,7 @@ visibility: hidden;
     max-width: 1000px;
     margin-right: auto;
     margin-left: auto;
+    background-color:#f9f9f9;
 }
 
 .column {
@@ -306,6 +311,39 @@ footer{
         padding-right: 100px;
     }
     
+    .section-break-4 {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        height: 0;
+        margin: 2rem auto 4rem;
+        text-align: center;
+        width: 100%;
+        margin-top:8px;
+        margin-bottom:8px;
+
+    }
+      
+    .section-break-4:before,
+    .section-break-4:after {
+          background-color: #FFBFB3;
+          content: '';
+          height: 1px;
+          left: 0;
+          margin: 0 auto;
+          position: absolute;
+          right: 0;
+          width: 7%;
+    }
+      
+    .section-break-4:before {
+        transform: rotate(10deg);
+    }
+      
+    .section-break-4:after {
+        transform: rotate(-10deg);
+    }
+      
     .column img{
         height: 80px;
         margin: auto;
@@ -346,12 +384,19 @@ footer{
     
     .fotografia h2{
         padding-bottom:20px ;
-        font-size: 50px;  
+        font-size: 35px;  
+    }
+    .fotografia h3{
+        font-size: 16px; 
+        padding-bottom:10px ; 
     }
     }
 
 
     @media(max-width:550px){
+        .nav-logo{
+            display: none;
+        }
         h1{
             font-size: 40px;
         }
@@ -364,9 +409,12 @@ footer{
         }
        
         .diseno-web{
-            background-color: #F9F9F9;
-            height: 600px;
+            padding-right: 10%;
+            padding-left: 10%;
+            height: auto;
+            padding-bottom: 40px;
         }
+
         .column img{
             display: none;
         }
@@ -375,7 +423,7 @@ footer{
             margin-bottom: 10px;
             padding:5%;
         }
-
+        
         .fotografia{
             display: block;
             max-width: 500px;
@@ -388,7 +436,9 @@ footer{
             padding-right: 50px;
             padding-left: 50px;
         }
-
+        .grid{
+            color:#3B3C43;
+        }
         .box-vacio{
             width: 0%;
         }
