@@ -11,22 +11,38 @@ h2{
     font-size: 35px;
     color: #616161;
 }
+
+#galeria{
+    max-width: 1080px;
+    margin: auto;
+}
+
+#galeria h2{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#galeria .column{
+.row .column{
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
     flex:33.33%;
-    width: auto;
-   overflow: hidden;
-    padding: 4px 4px;
+    width: 100%;
+    overflow: hidden;
     height: auto;
 }
 #galeria .column img{
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: auto;
+    margin-top: 1px;
 }
 
 #galeria img:hover{
@@ -64,4 +80,21 @@ footer{
     letter-spacing: 1px;
     text-transform: uppercase;
     opacity: .7;
+}
+
+@media (max-width:590px){
+    .menu-nav{
+        height: 100px;
+    }
+    .row .column{
+        flex:50%;
+        width: 100%;
+        height: auto;
+    }
+    
+    #galeria h2{
+        font-size: 20px;
+        margin: 10px auto;
+    }
+}
 }
