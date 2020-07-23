@@ -1,17 +1,20 @@
-const menuBtn = document.querySelector('.btn-toggle-nav');
-const getSidebar = document.querySelector('.nav-sidebar');
-const navCompleto = document.querySelector('.menu-nav')
-let menuOpen = false;
-menuBtn.addEventListener('click',()=>{
-    if(!menuOpen){
-        menuBtn.classList.add('open');
-        menuOpen = true;
-        getSidebar.style="visibility: visible"
-       
+jQuery(document).ready(function(){
+	$('.menu-item').addClass('menu-trigger');
+	$('.menu-trigger').click(function(){
+		$('#menu-trigger').toggleClass('clicked');
+		$('.container').toggleClass('push');
+		$('.menu-type').toggleClass('open');
+	});
+});
 
-    } else{
-        menuBtn.classList.remove('open');
-        menuOpen = false;
-        getSidebar.style="visibility: hidden"
-    }
+jQuery(document).ready(function(){
+	$('.menu-trigger').click(function(){
+		$('#menu-logo').hide();
+	});
+});
+
+jQuery(document).ready(function(){
+	$('window').scroll(function(){
+		$('#menu-logo').show();
+	});
 });

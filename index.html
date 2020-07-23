@@ -10,28 +10,52 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="body-wrapper">
-    <nav class="menu-nav">
-        <div class="nav-logo">
-            <img class="img-logo" src="./images/creativa digital2.png" alt="image-logo">
+    <nav>
+        <div class="menu-tint menu-trigger menu-type"></div>
+        <div class="menu menu-type">
+            <div class="table">
+                <div class="cell">
+                    <h1>Menu</h1>
+                    <div class="hr"></div>
+                    <a href="./index.html" class="menu-item">Home</a>
+                    <a href="./aboutme.html" class="menu-item">Sobre mi</a>
+                    <a href="./proyects.html" class="menu-item">Proyectos</a>
+                    <a href="./galeria.html" class="menu-item">Photo</a>
+                    <a href="./blog.html" class="menu-item">Blog</a>
+                </div>
+            </div>
         </div>
-        <div class="btn-toggle-nav">
-            <div class="btn-burger-nav"></div>
-        </div>
-        <div class="slogan">
-        <h1>Diferenciate del resto<span class="inline-block text-accent font-sans">*</span></h1>
-       
-        <div class="sb sb-4">
-            <hr class="section-break-4" />
-          </div>
 
-        <h2>Impulsa tu negocio a un nuevo nivel</h2>
+        <div id="menu-trigger" class="menu-trigger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+
+        <div id='menu-logo'>
+            <a href="./index.html">RH</a>
         </div>
     </nav>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#F9F9F9" fill-opacity="1" d="M0,64L24,74.7C48,85,96,107,144,133.3C192,160,240,192,288,202.7C336,213,384,203,432,192C480,181,528,171,576,154.7C624,139,672,117,720,122.7C768,128,816,160,864,181.3C912,203,960,213,1008,192C1056,171,1104,117,1152,85.3C1200,53,1248,43,1296,37.3C1344,32,1392,32,1416,32L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+    <div class="body-wrapper">
+    <div class="intro">
+        <div class="slogan">
+            <div class="slogan-wrap">
+            <h1 class="slogan-text">Diferenciate del resto<span class="inline-block text-accent font-sans">*</span></h1>
+       
+            <div class="sb sb-4">
+            <hr class="section-break-4" />
+            </div>
+
+            <h3 class="slogan-text">Impulsa tu negocio a un nuevo nivel</h2>
+            </div>
+        </div>
+    </div>
 
     <section class="diseno-web">
+        <h2>Web Design</h2>
+        <p class="line-break"></p>
        <div class="grid">
            <div class=column>
 
@@ -49,7 +73,7 @@
                 </div>              
                 <div class="container">
                 <h3>Diseño UX</h3>
-                <h4>Los usuarios necesitan una experiencia <strong>ágil, atractiva y satisfactoria </strong>. Un diseño de interfaz que lleve al usuario donde tú quieras , pero haciendo lo que le apetezca</h4>
+                <h4>Los usuarios necesitan una experiencia <strong>ágil, atractiva y satisfactoria </strong>. Un diseño que lleve al usuario donde tú quieras</h4>
                 </div>
             </div>
 
@@ -59,22 +83,21 @@
                 </div>              
                 <div class="container">
                 <h3>Diseño Responsive</h3>
-                <h4>Más que una moda, es una necesidad. <strong>Todos</strong> nuestros diseños son “responsive” y no los haríamos de otra manera.</h4>
+                <h4>Más que una moda, es <strong>una necesidad</strong>. Todos nuestros diseños son “responsive” y no los haríamos de otra manera.</h4>
                 </div>
             </div>           
        </div>
     </section>
    
     <section class="fotografia">
-        <h2>Fotografia Personalizada</h2>
-        <h3>No uses fotografias de stock, usa <strong>fotografias únicas</strong></h3>
-        <h4>Diferenciate de la competencia</h4>
-        <div class="fotografia-foto">
-            <div class="box-vacio">
-                <img src="" alt="">
+        <div class="fotografia-wrap">
+            <h2>Fotografia Personalizada</h2>
+            <p class="line-break"></p>
+            <div class="fotografias-content">
+            <h3>No uses fotografias de stock, usa <strong>fotografias únicas</strong></h3>
+            <h4>Diferenciate de la competencia</h4>
             </div>
-            <div class="fotografia-box">
-            <img src="./images/portfolio/oatmealcookies.jpg" alt="cookies" srcset="">
+            <a href="./galeria.html" class="button"> Ver Galeria</a>
             </div>
         </div>
     </section>
@@ -94,15 +117,7 @@
             -->
     </footer>
 
-    <aside class="nav-sidebar">
-            <ul>
-                <li><a href="./aboutme.html">Sobre mi</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="./fotografia.html">Fotografia</a></li>
-                <!--<li><a href="#">Contactame</a></li>-->
-            </ul>
-    </aside>
-
+    <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
