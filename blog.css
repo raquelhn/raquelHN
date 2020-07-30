@@ -70,7 +70,15 @@
       overflow: hidden;
       position: relative;
   }
+
+  .bank a{
+    color:#3b3b3b;
+  }
   
+  .bank a:hover{
+    color:#29B6F6
+  }
+
   .card__image>img {
     display: block;
     margin-bottom: 0;
