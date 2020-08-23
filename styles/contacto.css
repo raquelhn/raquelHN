@@ -1,0 +1,77 @@
+html{    
+    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
+    background-size: cover;
+    height:100%;
+  }
+
+  #form-main{
+	width:100%;
+    padding-top:0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 40px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #27AE60;
+	color: gray;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#27AE60;
+	border:#27AE60 solid 3px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+.button-form{
+    width: 100%;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		margin-top: 20%;
+		width: 88%;
+		padding-left: 3%;
+		padding-right: 3%;
+	}

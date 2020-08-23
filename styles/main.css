@@ -196,7 +196,9 @@ a{
 
 .slogan .slogan-text{
     opacity: 1;
+    margin-bottom: 25px;
 }
+
 
 .section-break-4{
     display: none;
